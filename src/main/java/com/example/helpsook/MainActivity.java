@@ -271,31 +271,31 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         gethelp.setOnClickListener(btnListener);
         letsdo.setOnClickListener(btnListener);
 
-//        // 학교 근처에서만 도움 요청 가능하도록 제한.
-//        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-//        Location userlocation = getMyLocation();
-//        if(userlocation != null){
-//            lati = userlocation.getLatitude();
-//            longi = userlocation.getLongitude();
-//        }
-//        if(!((lati <=37.6 && lati >= 37.5) &&(longi <= 127 && longi >= 126.9))) {
-//            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-//            dlg.setMessage("현재 위치에서 퀘스트 생성은 불가합니다.");
-//            dlg.setCancelable(false);
-//            dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialogInterface, int i) {
-//                    gohome.setEnabled(false);
-//                    gethelp.setEnabled(false);
-//                    letsdo.setEnabled(false);
-//                }
-//            });
-//            dlg.show();
-//        }else{
-//            gohome.setEnabled(true);
-//            gethelp.setEnabled(true);
-//            letsdo.setEnabled(true);
-//        }
+       // 학교 근처에서만 도움 요청 가능하도록 제한.
+       locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+       Location userlocation = getMyLocation();
+       if(userlocation != null){
+           lati = userlocation.getLatitude();
+           longi = userlocation.getLongitude();
+       }
+       if(!((lati <=37.6 && lati >= 37.5) &&(longi <= 127 && longi >= 126.9))) {
+           AlertDialog.Builder dlg = new AlertDialog.Builder(this);
+           dlg.setMessage("현재 위치에서 퀘스트 생성은 불가합니다.");
+           dlg.setCancelable(false);
+           dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+               @Override
+               public void onClick(DialogInterface dialogInterface, int i) {
+                   gohome.setEnabled(false);
+                   gethelp.setEnabled(false);
+                   letsdo.setEnabled(false);
+               }
+           });
+           dlg.show();
+       }else{
+           gohome.setEnabled(true);
+           gethelp.setEnabled(true);
+           letsdo.setEnabled(true);
+       }
     }
 
     // 구글과 연결 끊기
