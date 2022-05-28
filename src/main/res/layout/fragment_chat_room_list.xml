@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatting.ChatRoomListFragment"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="도움 받기 채팅 목록"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/bg_content_et"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:name="com.roopre.simpleboard.Fragment.ChatMsgFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".Fragment.ChatMsgFragment"
+        tools:listitem="@layout/custom_chat_room" />
+
+</LinearLayout>

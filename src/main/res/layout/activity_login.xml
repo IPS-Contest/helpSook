@@ -8,13 +8,14 @@
     android:orientation="vertical"
     tools:context=".login.LoginActivity"
     android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_main"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
         android:padding="50dp"
         android:gravity="center_horizontal|center_vertical"
         >
@@ -23,85 +24,23 @@
             android:id="@+id/icon"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginBottom="41dp"
-            android:src="@drawable/smile_bee"
+            android:src="@drawable/icon"
             />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="서로돕숙"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="41dp"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="# Email"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                />
-
-            <EditText
-                android:id="@+id/login_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="41dp"
-                android:ems="10"
-                android:textColor="@color/black"
-                android:inputType="textEmailAddress"
-                android:backgroundTint="@color/black"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signInButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_centerHorizontal="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="# Password"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                />
-
-            <EditText
-                android:id="@+id/login_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="41dp"
-                android:ems="10"
-                android:textColor="@color/black"
-                android:inputType="textPassword"
-                android:backgroundTint="@color/black"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/login_button"
-                style="@style/defaultButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="로그인"
-                android:backgroundTint="@color/colorPrimaryDark"
-                />
-
-            <Button
-                android:id="@+id/join_button"
-                style="@style/defaultButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="가입"
-                android:backgroundTint="@color/colorPrimaryDark"
-                />
-
-        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

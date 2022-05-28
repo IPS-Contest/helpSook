@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445171252925",
+    "firebase_url": "https://helpsook-default-rtdb.firebaseio.com",
+    "project_id": "helpsook",
+    "storage_bucket": "helpsook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445171252925:android:95aceb6e1d970c0de541d4",
+        "android_client_info": {
+          "package_name": "com.example.helpsook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445171252925-b72dcvm59c30dvl4rvlorp78jrc3ir8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.helpsook",
+            "certificate_hash": "0df2ba2764d7608834704b6bef50b522cc635c80"
+          }
+        },
+        {
+          "client_id": "445171252925-rqtejjlaujumlqp5bs5db8f3gk4d5875.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpvhke2yizyVOph4AU_P3pSb3lQGDOPys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445171252925-rqtejjlaujumlqp5bs5db8f3gk4d5875.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
