@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/korean"
+        android:title="한식" />
+
+    <item
+        android:id="@+id/western"
+        android:title="양식" />
+
+    <item
+        android:id="@+id/china"
+        android:title="중식" />
+
+    <item
+        android:id="@+id/japan"
+        android:title="일식"/>
+
+    <item
+        android:id="@+id/flour"
+        android:title="분식" />
+
+    <item
+        android:id="@+id/mexico"
+        android:title="멕시코식" />
+
+    <item
+        android:id="@+id/thai"
+        android:title="태국식" />
+
+    <item
+        android:id="@+id/vietnam"
+        android:title="베트남식" />
+
+</menu>
+
+
+

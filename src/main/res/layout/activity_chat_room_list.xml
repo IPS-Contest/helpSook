@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatting.ChatRoomListActivity"
+    android:background="@color/black"
+    android:id="@+id/mainFrame"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_tab"
+            android:layout_alignParentTop="true"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            app:tabIndicatorGravity="stretch"
+            app:tabTextColor="#ffffff"
+            app:tabSelectedTextColor="@color/black"
+            app:tabIndicatorColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

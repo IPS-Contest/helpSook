@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/feminine"
+        android:title="여성용품" />
+
+
+    <item
+        android:id="@+id/writing"
+        android:title="필기구" />
+
+
+    <item
+        android:id="@+id/paper"
+        android:title="이면지" />
+
+    <item
+        android:id="@+id/chargerC"
+        android:title="C타입 충전기"/>
+
+    <item
+        android:id="@+id/charger8"
+        android:title="8핀 충전기"/>
+
+    <item
+        android:id="@+id/chargerTabletS"
+        android:title="삼성 노트북 충전기"/>
+
+    <item
+        android:id="@+id/chargerTabletA"
+        android:title="애플 노트북 충전기"/>
+
+    <item
+        android:id="@+id/etc"
+        android:title="직접 입력하세요" />
+
+</menu>
+
+
+
